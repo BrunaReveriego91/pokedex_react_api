@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Component } from "react/cjs/react.production.min";
+import api from "./api";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  state = {
+    pokemons: [],
+    loading: true,
+  };
+
+  async componentDidMount() {
+    const response = await api.get("pokemon/eevee");
+    this.setState({ pokemons: [response.data], loading: false });
+  }
+
+  render() {
+    const array = this.state;
+
+    return (
+      <div>
+        <h1>Lista Pokémon:</h1>
+
+        {array.pokemons.map((pokemon,index) => (
+          pokemon.abilities.map((ab,index) => (
+            <li key={index}>{ab.ability.name}</li>
+          ))
+          ))}
+      </div>
+    );
+  }
 }
 
 export default App;
