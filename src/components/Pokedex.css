@@ -1,0 +1,247 @@
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+.principal {
+    background-color: #ca2323;
+    width: 100%;
+    height: 800px;
+    border: solid 1px black;
+    border-radius: 5px;
+    position: relative;
+    padding: 0px;
+}
+
+.principal-conteudo {
+    /*margin:30px;*/
+}
+
+.principal-visor {
+    position: relative;
+    background-color: #e8e8e8;
+    width: 340px;
+    height: 313px;
+    border: solid 1px black;
+    top: 50px;
+    right: -83px;
+    border-radius: 3px;
+}
+
+.principal-visor2 {
+    position: absolute;
+    background-color: white;
+    width: 250px;
+    height: 220px;
+    border: solid 1px black;
+    right: 7%;
+    right: 12%;
+    bottom: 14%;
+    border-radius: 5px;
+}
+
+.principal-visor-corte {
+    width: 66px;
+    height: 37px;
+    bottom: -9px;
+    left: -22px;
+    background-color: #ca2323;
+    z-index: 2;
+    position: absolute;
+    transform: rotate( 45deg );
+    border-top: 1px black solid;
+}
+
+.circulo {
+    margin: 20px;
+}
+
+.circulo-principal {
+    border-radius: 100%;
+    border: solid 1px black;
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    bottom: -15px;
+    float: left;
+}
+
+.circulo-principal2 {
+    border-radius: 100%;
+    border: solid 1px black;
+    background-color: #367a9e;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+}
+
+.circulo-principal3 {
+    border-radius: 100%;
+    background-color: #2ba0cc;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 43%;
+    bottom: 45%;
+}
+
+.circulo-principal-painel {
+    border-radius: 100%;
+    border: solid 1px black;
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+}
+
+.vermelho {
+    background-color: #930707;
+}
+
+.amarelo {
+    background-color: yellow;
+}
+
+.verde {
+    background-color: green;
+}
+
+.circulo-principal-pequeno {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    right: -35px;
+    top: 10px;
+}
+
+
+.linha-principal {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    top: 70px;
+    position: relative;
+}
+
+.linha-principal-reta {
+    width: 53%;
+    top: -1px;
+    background-color: #930707;
+    height: 12px;
+    border: solid 1px black;
+    border-left: 0px;
+    border-right: 0px;
+    position: absolute;
+}
+
+.linha-principal-inclinada {
+    width: 7%;
+    position: absolute;
+    border-radius: 4px;
+    top: -24px;
+    right: 234px;
+    background-color: #930707;
+    height: 15px;
+    border: solid 1px black;
+    border-left: 0px;
+    border-right: 0px;
+    transform: skewY( -46deg );
+}
+
+.linha-principal-reta2 {
+    width: 40%;
+    background-color: #930707;
+    height: 12px;
+    border: solid 1px black;
+    border-left: 0px;
+    border-right: 0px;
+    position: absolute;
+    right: 0;
+    bottom: 32px;
+}
+
+.linha-principal-lateral {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    float: right;
+    right: -71px;
+    top: -66px;
+    z-index: 3;
+}
+
+.linha-principal-lateral-reta {
+    border: solid 1px black;
+    border-radius: 10px 0 10px 0;
+    position: relative;
+    height: 673px;
+    width: 67px;
+    background-color: #ca2323;
+}
+
+.principal-baixo {
+    border: solid 1px black;
+    border-top: 0px;
+    border-right: 0px;
+    position: absolute;
+    width: 87%;
+    right: 67px;
+    bottom: 14px;
+    height: 74.5%;
+}
+
+.principal-baixo-borda-superior {
+    position: relative;
+    border: solid 1px black;
+    width: 60%;
+}
+
+
+.principal-baixo-borda-superior-inclinada {
+    position: relative;
+    border: solid 1px black;
+    width: 7%;
+    transform: skewY( -46deg );
+    right: -303px;
+    top: -20px;
+}
+
+.principal-baixo-borda-superior-reta {
+    position: relative;
+    border: solid 1px black;
+    right: -338px;
+    top: -40px;
+    width: 33%;
+}
+
+.principal-baixo-borda-superior-lateral {
+    position: absolute;
+    border: solid 1px black;
+    height: 106%;
+    right: 0px;
+    top: -36px;
+    width: 1px;
+}
